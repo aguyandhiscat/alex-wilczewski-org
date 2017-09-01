@@ -1,0 +1,8 @@
+wp-content/backups
+wp-content/upgrade
+wp-content/uploads
+wp-config.php
+
+.gitignore
+
+
