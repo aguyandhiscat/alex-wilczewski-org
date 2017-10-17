@@ -1,0 +1,19 @@
+version: "3"
+services:
+  ws:
+    image: "alexwilczewskiorg"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ".:/var/www/html"
+  db:
+    image: "mysql:5.7"
+    environment:
+      MYSQL_ROOT_PASSWORD: "test"
+    volumes:
+      - "./dbdata:/var/lib/mysql"
+
+# sudo docker-compose up -d
+# sudo docker exec -it compose_dev_1 /bin/bash
+# sudo docker-compose down

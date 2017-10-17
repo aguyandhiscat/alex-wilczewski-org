@@ -1,0 +1,27 @@
+{
+  "name": "alex-wilczewski-org",
+  "version": "1.0.0",
+  "description": "My website's package",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexwilczewski/alex-wilczewski-org.git"
+  },
+  "author": "Alex Wilczewski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexwilczewski/alex-wilczewski-org/issues"
+  },
+  "homepage": "https://github.com/alexwilczewski/alex-wilczewski-org#readme",
+  "devDependencies": {
+    "grunt": "v1.0.1",
+    "grunt-contrib-concat": "v1.0.1",
+    "grunt-contrib-cssmin": "v2.2.1",
+    "grunt-contrib-watch": "v1.0.0",
+    "grunt-sass": "v2.0.0",
+    "normalize.css": "7.0.0"
+  }
+}

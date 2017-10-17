@@ -1,0 +1,107 @@
+// http://paletton.com/#uid=a2J4G0kl0oZb+A9gUtfovlqsVgY
+$primary-color: #55A93A;
+$primary-darkest: #24730B;
+$primary-darker: #3D9122;
+$primary-lighest: #9FDF8B;
+$primary-lighter: #76C65D;
+$secondary-color: #663385;
+$secondary-darkest: #3E0D5A;
+$secondary-darker: #532072;
+$secondary-lighest: #A077B8;
+$secondary-lighter: #7F4E9C;
+
+$bg: #3c3c3c;
+$text: #cccccc;
+
+$nav-width-cutoff: 40em;
+
+$page-edge-padding: 1em;
+$section-padding: 1em;
+$article-padding: 1em;
+
+body {
+  background: $bg;
+  color: $text;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: $primary-lighter;
+  text-decoration: none;
+}
+a:hover {
+  color: $primary-lighest;
+  text-decoration: underline;
+}
+
+header {
+  padding: $page-edge-padding $page-edge-padding $section-padding;
+  border-bottom: 1px solid $text;
+
+  @media(min-width: $nav-width-cutoff) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section#title {
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 1px;
+      margin: 0 0 .2em;
+      font-size: 2.5em;
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    h2 {
+      margin: 0;
+      font-weight: normal;
+      font-size: 1.3em;
+    }
+  }
+
+  nav {
+    @media(max-width: $nav-width-cutoff) {
+      margin-top: 15px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      @media(max-width: $nav-width-cutoff) {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      li {
+        display: inline-block;
+
+        a {
+          display: inline-block;
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}
+
+section#content {
+  padding: 0 $page-edge-padding 0;
+
+  h1 {
+    display: inline-block;
+    margin: 0 .3em 0 0;
+  }
+  h2 {
+    display: inline-block;
+    margin: 0;
+    font-size: 0.9em;
+  }
+  article {
+    padding: $article-padding 0;
+  }
+}
